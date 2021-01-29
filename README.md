@@ -1,1 +1,2 @@
-# oauth-testing-frontend
+# OAuth testing frontend
+THIS PAGE DOES NOT WORK WITHOUT THE SERVER RUNNING ON YOUR LOCALHOST
