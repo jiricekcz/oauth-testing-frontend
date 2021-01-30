@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="628212644784-6l6g716agih59q9d0n1s4dclert83d6m.apps.googleusercontent.com">
+        <link rel='stylesheet' href='./css/style.css'>
+    <title>Testing</title>
+    <!-- Imports lib -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="http://localhost:4443/api.js"></script>
+</head>
+
+<body>
+    <div id="logins">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <button id="linkedInLogin">Login with LinkedIn</button>
+    </div>
+    <div class="profile" id="profile">
+        <table>
+            <tbody class="center">
+                <tr>
+                    <td>User ID:</td>
+                    <td><span id="userid">Awaiting data...</span></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input id="firstname" value="Awaiting data..."></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input id="lastname" value="Awaiting data..."></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><span id="email">Awaiting data...</span></td>
+                </tr>
+                <tr>
+                    <td>Profile Photo:</td>
+                    <td><img src="" alt="Your profile image" id="photo"></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="loginWithPassword">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="emailLogin"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="passwordLogin"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="login">Login</button>
+    </div>
+    <div class="registerWithPassword">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="nameRegister"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="emailRegister"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" id="passwordRegister"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="register">Register</button>
+    </div>
+    <button id="logout">Logout</button>
+</body>
+<script type="xing/login">
+    {
+        "consumer_key": "6855d226cbfe83203f37"
+    }
+</script>
+<script>
+    (function (d) {
+        var js, id = 'lwx';
+        if (d.getElementById(id)) return;
+        js = d.createElement('script');
+        js.id = id;
+        js.src = "https://www.xing-share.com/plugins/login.js";
+        d.getElementsByTagName('head')[0].appendChild(js)
+    }(document));
+</script>
+<script src='./ts/script.js'></script>
+
+</html>

@@ -1,0 +1,14 @@
+.profile {
+    display: none;
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    top: 25%;
+    height: 50%;
+    background-color: red;
+    border-radius: 7px;
+}
+
+.center {
+    text-align: center;
+}
